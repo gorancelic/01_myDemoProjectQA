@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Search_Suite" verbose="5">
+	<parameter name="environment" value="development"/>
+	<parameter name="browser" value="firefox"/>
+
+	<test name="Search_test">
+		<classes>
+			<class name="com.myapp.example.ui.SearchTests" />
+		</classes>
+	</test>
+</suite>

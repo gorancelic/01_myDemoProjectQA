@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="API_Suite_Actions" verbose="5">
+	<parameter name="environment" value="development"/>
+
+	<test name="Actions_test">
+		<classes>
+			<class name="com.myapp.example.api.ActionsTest" />
+		</classes>
+	</test>
+</suite>

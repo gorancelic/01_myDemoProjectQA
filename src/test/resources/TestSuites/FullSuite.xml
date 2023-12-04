@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Full_Suite_pack" verbose="0">
+	<parameter name="environment" value="development"/>
+
+	<test name="FullSuitePackAPI+UI">
+		<classes>
+			<class name="com.myapp.example.ui.SearchTests" />
+			<class name="com.myapp.example.api.ActionsTest" />
+		</classes>
+	</test>
+</suite>

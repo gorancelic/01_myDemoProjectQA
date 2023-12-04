@@ -1,0 +1,54 @@
+# Compiled Java classes
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Maven build folder
+target/
+
+# IDE - IntelliJ IDEA specific
+.idea/
+*.iml
+*.iws
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Thumbnails
+*.thmb
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Generated files
+bin/
+obj/
+
+# Test output
+test-output/
+
+# Gradle build folder
+build/
+
+# Ignore Eclipse project files
+.classpath
+.project
+.settings/
+
+# Virtual Machine crash logs
+hs_err_pid*
+
+# Node Modules (for projects using frontend tools like npm)
+node_modules/
