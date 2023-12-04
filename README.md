@@ -56,36 +56,35 @@ src
 │
 ├── main
 │   ├── java
-│   │   ├── com.myapp.example
-│   │   │   ├── base (BaseTest, BaseTestGui, BrowserDriverFactory, CsvDataProviders, 
-│   │   │   │          EnvironmentConfig, TestListener, TestUtilities, TestRailAPI) 
-│   │   │   ├── pages (all GUI pages for SUT)
-│   │   └── ...
+│   │   └── com.myapp.example
+│   │          ├── base (BaseTest, BaseTestGui, BrowserDriverFactory, CsvDataProviders, 
+│   │          │          EnvironmentConfig, TestListener, TestUtilities, TestRailAPI) 
+│   │          └── pages (all GUI pages for SUT)
+│   │   
 │   └── resources
 │       ├── config.properties (environments details)
 │       ├── chromedriver.exe
 │       ├── geckodriver.exe
-│       ├── log4j2.xml
+│       └── log4j2.xml
 │
 └── test
 │   ├── java
-│   │   ├── com.myapp.example
-│   │   │   ├── api (All API tests)
-│   │   │   ├── ui (All UI tests)
-│   │   │   └── ...
+│   │   └── com.myapp.example
+│   │          ├── api (All API tests)
+│   │          └── ui (All UI tests)
+│   │   
 │   └── resources
 │       ├── dataproviders (test data section)
 │       ├── TestSuites
-│       │   ├── apiSuites
-│       │   ├── guiSuites
-│       │── FullSuite.xml
+│       │   ├── api
+│       │   └── ui
+│       └── FullSuite.xml
 └── logs
 target
 │
 └── test-output (this is folder designed for reports. 
        │            This can be changed in pom.xml file under plugin: [maven-surefire-plugin] )
        └── screenshots
-
 ```
 # Contributing
 Use common test naming conventions and best java coding practices stated in: [https://www.oracle.com/technetwork/java/codeconventions-150003.pdf]
