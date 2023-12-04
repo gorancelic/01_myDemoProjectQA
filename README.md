@@ -75,10 +75,10 @@ src
 │   │   
 │   └── resources
 │       ├── dataproviders (test data section)
-│       ├── TestSuites
-│       │   ├── api
-│       │   └── ui
-│       └── FullSuite.xml
+│       └── TestSuites
+│           ├── api
+│           │── ui
+│           └── FullSuite.xml
 └── logs
 target
 │
