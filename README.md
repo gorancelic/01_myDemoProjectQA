@@ -74,19 +74,18 @@ src
 │   │   │   ├── ui (All UI tests)
 │   │   │   └── ...
 │   └── resources
-│   │   ├── dataproviders (test data section)
-│   │   ├── TestSuites
-│   │   │   ├── apiSuites
-│   │   │   ├── guiSuites
-│   ├   |── FullSuite.xml
-└── (other test resources)
+│       ├── dataproviders (test data section)
+│       ├── TestSuites
+│       │   ├── apiSuites
+│       │   ├── guiSuites
+│       │── FullSuite.xml
+└── logs
 target
 │
-├── test-output (this is folder designed for reports. 
-│               This can be changed in pom.xml file under plugin: [maven-surefire-plugin] )
-test-output
-│
-├── screenshots
+└── test-output (this is folder designed for reports. 
+       │            This can be changed in pom.xml file under plugin: [maven-surefire-plugin] )
+       └── screenshots
+
 ```
 # Contributing
 Use common test naming conventions and best java coding practices stated in: [https://www.oracle.com/technetwork/java/codeconventions-150003.pdf]
