@@ -79,7 +79,7 @@ src
 │           ├── api
 │           │── ui
 │           └── FullSuite.xml
-└── logs
+logs
 target
 │
 └── test-output (this is folder designed for reports. 
