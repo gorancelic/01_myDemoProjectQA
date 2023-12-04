@@ -27,7 +27,7 @@ Steps description for installation and set up the project. For example:
 
 1. Clone the repository:
 bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/gorancelic/myDemoProjectQA.git
 2. Navigate to the project directory:
 bash
 cd your-repo-name
@@ -41,26 +41,23 @@ To run all tests(bash):
 mvn test
 
 To run a specific test suite(bash):
-mvn test -DsuiteXmlFile=testng.xml
+mvn test '-DsuiteXmlFile=src/test/resources/TestSuites/ui/SearchSuite.xml'
 
 To run a specific test suite with TestRail update next example could be used:
-mvn test '-DsuiteXmlFile=src/test/resources/TestSuites/api/example.xml' -DupdateTestRail=true
+mvn test '-DsuiteXmlFile=src/test/resources/TestSuites/FullSuite.xml' -DupdateTestRail=true
 
 # Structure
 Describe the structure of your project. Mention how your tests are organized, 
 and how the TestNG and RestAssured libraries are utilized.
 
 # Framework structure tree:
-
+```plaintext
 src
 │
 ├── main
 │   ├── java
 │   │   ├── com.myapp.example
-│   │   │   ├── api
-│   │   │   │   ├── clients
-│   │   │   │   ├── models
-│   │   │   ├── base (BaseTest, BaseTestApi, BrowserDriverFactory, CsvDataProviders, 
+│   │   │   ├── base (BaseTest, BaseTestGui, BrowserDriverFactory, CsvDataProviders, 
 │   │   │   │          EnvironmentConfig, TestListener, TestUtilities, TestRailAPI) 
 │   │   │   ├── pages (all GUI pages for SUT)
 │   │   └── ...
@@ -68,21 +65,20 @@ src
 │       ├── config.properties (environments details)
 │       ├── chromedriver.exe
 │       ├── geckodriver.exe
-│       ├── log4j.properties
 │       ├── log4j2.xml
 │
 └── test
 │   ├── java
-│   │   ├── your.test.package
-│   │   │   ├── (TestNG test classes)
-│   │   │   ├── (RestAssured API tests)
+│   │   ├── com.myapp.example
+│   │   │   ├── api (All API tests)
+│   │   │   ├── ui (All UI tests)
 │   │   │   └── ...
 │   └── resources
-│   │   ├── dataproviders
+│   │   ├── dataproviders (test data section)
 │   │   ├── TestSuites
 │   │   │   ├── apiSuites
 │   │   │   ├── guiSuites
-│   ├── testng.xml
+│   ├   |── FullSuite.xml
 └── (other test resources)
 target
 │
@@ -91,11 +87,11 @@ target
 test-output
 │
 ├── screenshots
-
-Contributing
+```
+# Contributing
 Use common test naming conventions and best java coding practices stated in: [https://www.oracle.com/technetwork/java/codeconventions-150003.pdf]
 
-Copyright [2023] [Goran Celic]
+# Copyright [2023] [Goran Celic]
 
 Licensed under the [no license] 
 Contact [0658989856]
